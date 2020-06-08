@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+
+filename = '/ufrc/bsc4452/share/Class_Files/data/CO-OPS__8729108__wl.csv'
+file = open(filepath)
+highest = None
+for line in file:
+   columns=line.split(',')
+   try:
+      if highest is None or float(columns[1]) > highest:
+         highest = float(columns[1])
+         date_time = (columns[0])
+   except:
+      continue
+#break
+
+print("Highest Water Level:", highest, date_time)
