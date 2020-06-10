@@ -1,6 +1,6 @@
 # Problem Set 3
-### Data found at: https://github.com/CompTools/Class_Files/blob/master/data/CO-OPS__8729108__wl.csv
-### Metadata found at: https://github.com/CompTools/Class_Files/blob/master/data/CO_OPS__wl_file.md
+#### Data found at: https://github.com/CompTools/Class_Files/blob/master/data/CO-OPS__8729108__wl.csv
+#### Metadata found at: https://github.com/CompTools/Class_Files/blob/master/data/CO_OPS__wl_file.md
 
 ### Problem 1:
 ### Write a script (or Jupyter Notebook code block) that opens the file, uses a for loop to read through the file line by line and reports the highest water level and the date and time that was observed.
