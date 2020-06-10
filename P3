@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+
+import pandas as pd
+columns=['Date Time',' Water Level']
+WL=pd.read_csv("/ufrc/bsc4452/share/Class_Files/data/CO-OPS__8729108__wl.csv", usecols=columns)# dataframe named WL for Water Level
+WL['WL_change'] = WL[' Water Level'].diff()# New list created named WL_change in dataframe WL
+WL.loc[WL['WL_change'].idxmax()]
+#finds maximum value in list WL_change, gives the Date Time and Water Level associated with greatest rise in water level
+#This means the associated water level minus the previous water level 6 minutes prior provides the greates change
